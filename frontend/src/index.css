@@ -1,0 +1,135 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.app {
+  display: flex;
+  flex-direction: column;  /* Arrange items in a column */
+  align-items: center;     /* Horizontally center items */
+  justify-content: center; /* Vertically center items */
+  min-height: 100vh;       /* Ensure the container takes up the full height of the viewport */
+  text-align: center;      /* Center text within the container */
+  width: 100%;
+}
+.card {
+  border: 1px solid hsl(0, 0, 80%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 250px;
+  height: 450px;
+  display: inline-block;
+}
+.custom-button {
+  margin: 10px; /* Add margin between buttons */
+}
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive column layout */
+  gap: 5%;
+  justify-content: center; /* Center the grid items horizontally */
+  width: 90%;
+  /* width: 100%; Full width to allow centering */
+  max-width: 1200px; /* Optional: Limit the maximum width of the grid */
+  margin: 0 auto; /* Center the grid container itself */
+  font-family
+  : 'Roboto', sans-serif;
+}
+.title-input {
+  width: 20%; /* Adjust width as needed */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+.text-input {
+  width: 50%; /* Adjust width as needed */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.cardImg {
+  width: 100%; /* Ensures image takes up the full width of the container */
+  height: 250px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  margin-bottom: 10px;
+  border-radius: 8px; /* Optional: Adds rounded corners to the image */
+}
+.cardBody {
+  overflow: hidden;        /* Hide overflow */
+  text-overflow: ellipsis; /* Show ellipsis if text is too long */
+  max-height: 150px;        /* Adjust to fit your card's design */
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+/* 
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */

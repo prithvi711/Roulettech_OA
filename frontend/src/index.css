@@ -14,12 +14,12 @@
 }
 .app {
   display: flex;
-  flex-direction: column;  /* Arrange items in a column */
-  align-items: center;     /* Horizontally center items */
-  justify-content: center; /* Vertically center items */
-  min-height: 100vh;       /* Ensure the container takes up the full height of the viewport */
-  text-align: center;      /* Center text within the container */
-  width: 100%;
+  flex-direction: column;  
+  align-items: center;     
+  justify-content: center; 
+  min-height: 100vh;       
+  text-align: center;      
+  width: 100%
 }
 .card {
   border: 1px solid hsl(0, 0, 80%);
@@ -33,22 +33,21 @@
   display: inline-block;
 }
 .custom-button {
-  margin: 10px; /* Add margin between buttons */
+  margin: 10px; 
 }
 .recipe-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive column layout */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
   gap: 5%;
-  justify-content: center; /* Center the grid items horizontally */
+  justify-content: center;
   width: 90%;
-  /* width: 100%; Full width to allow centering */
-  max-width: 1200px; /* Optional: Limit the maximum width of the grid */
-  margin: 0 auto; /* Center the grid container itself */
-  font-family
-  : 'Roboto', sans-serif;
+  width: 100%; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+
 }
 .title-input {
-  width: 20%; /* Adjust width as needed */
+  width: 20%;  
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #ccc;
@@ -57,26 +56,28 @@
   box-sizing: border-box;
 }
 .text-input {
-  width: 50%; /* Adjust width as needed */
+  width: 50%; 
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 12px;
+  overflow: hidden;       
+  text-overflow: ellipsis;
   box-sizing: border-box;
 }
 
 .cardImg {
-  width: 100%; /* Ensures image takes up the full width of the container */
-  height: 250px; /* Set a fixed height */
-  object-fit: cover; /* Ensures the image covers the area without distortion */
+  width: 100%; 
+  height: 250px; 
+  object-fit: cover; 
   margin-bottom: 10px;
-  border-radius: 8px; /* Optional: Adds rounded corners to the image */
+  border-radius: 8px; 
 }
 .cardBody {
-  overflow: hidden;        /* Hide overflow */
-  text-overflow: ellipsis; /* Show ellipsis if text is too long */
-  max-height: 150px;        /* Adjust to fit your card's design */
+  overflow: hidden;      ;
+  text-overflow: ellipsis;
+  max-height: 20%;       ;
 }
 button {
   border-radius: 8px;
@@ -85,6 +86,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
+  color: azure;
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
